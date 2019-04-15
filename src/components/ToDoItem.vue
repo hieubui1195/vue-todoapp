@@ -13,7 +13,7 @@ export default {
     props: ['todo'],
     methods: {
         deleteItem(todo) {
-            this.$emit('delete', todo);
+            this.$store.dispatch('deleteToDo', todo);
         }
     }
 }
